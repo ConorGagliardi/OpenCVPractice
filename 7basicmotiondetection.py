@@ -40,7 +40,7 @@ while capture.isOpened():
 
     fgmask = background.apply(diff)
 
-    blur = cv.GaussianBlur(fgmask, (3,3), 0)
+    blur = cv.GaussianBlur(fgmask, (7,7), 0)
 
     #canny = cv.Canny(blur, 50, 150) #calculate edges using the canny function
 
